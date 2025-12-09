@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness App - Mental Health & Self-Care</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #D4A5D8 0%, #B8E6D5 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #5A4A7B;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(212, 165, 216, 0.2);
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #7B68A6;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #8B7BA8;
+            margin-bottom: 30px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #FAF7F2;
+            border: 2px solid #D4A5D8;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-emoji {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #7B68A6;
+        }
+        
+        .feature-desc {
+            font-size: 13px;
+            color: #8B7BA8;
+            line-height: 1.5;
+        }
+        
+        .quick-start {
+            background: #E8D5F0;
+            border-left: 4px solid #D4A5D8;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .quick-start h2 {
+            color: #7B68A6;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .quick-start ol {
+            margin-left: 20px;
+            color: #5A4A7B;
+            line-height: 2;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #D4A5D8;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #7B68A6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 165, 216, 0.3);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 28px;
+            color: #D4A5D8;
+            margin-bottom: 8px;
+        }
+        
+        .stat-item p {
+            font-size: 13px;
+            color: #8B7BA8;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #E0E0E0;
+            color: #8B7BA8;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <section id="hero" style="display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+            <div style="flex:1 1 320px; min-width:260px;">
+                <h1>🌟 Hello, Bhumi</h1>
+                <p class="subtitle">Your personal mental wellness companion</p>
+
+                <p style="color: #5A4A7B; line-height: 1.8; margin-top:6px;">
+                    Welcome to your calming space — track moods, breathe mindfully, plan your goals, and reflect with private journaling. This lightweight app is designed to be private, simple, and supportive.
+                </p>
+
+                <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+                    <a class="cta-button" href="README.md">📖 Documentation</a>
+                    <a class="cta-button" href="QUICK_START.md" style="background:#7B68A6">🚀 Quick Start</a>
+                    <a class="cta-button" href="#features" style="background:#B8E6D5; color:#224;">✨ Features</a>
+                </div>
+            </div>
+
+            <div style="flex:0 0 180px; display:flex; justify-content:center; align-items:center;">
+                <div class="avatar">
+                    <div class="avatar-fallback">B</div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="quick-start">
+            <h2>🚀 Quick Start</h2>
+            <ol>
+                <li>Extract or clone the project</li>
+                <li>Run <code>flutter pub get</code></li>
+                <li>Update <code>lib/utils/external_links.dart</code> with your phone number and playlist URL</li>
+                <li>Add audio files to <code>assets/</code> folder (optional)</li>
+                <li>Run <code>flutter run</code></li>
+            </ol>
+            <a href="QUICK_START.md" class="cta-button">📖 View Quick Start Guide</a>
+        </div>
+        
+        <h2 style="color: #7B68A6; margin-top: 30px; margin-bottom: 20px;">✨ Features</h2>
+        <div id="features" class="features">
+            <div class="feature-card">
+                <div class="feature-emoji">🫁</div>
+                <div class="feature-title">Breathing Exercise</div>
+                <div class="feature-desc">1/3/5 min breathing timers with animated guidance</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">😊</div>
+                <div class="feature-title">Mood Meter</div>
+                <div class="feature-desc">Track your emotions with weekly graph analytics</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">📋</div>
+                <div class="feature-title">Future Planner</div>
+                <div class="feature-desc">Manage daily, weekly, and long-term goals</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">✨</div>
+                <div class="feature-title">Affirmations</div>
+                <div class="feature-desc">Daily positive affirmations + custom collection</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">📔</div>
+                <div class="feature-title">Journal & Notes</div>
+                <div class="feature-desc">Private journaling with PIN lock security</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">🎵</div>
+                <div class="feature-title">Relaxing Sounds</div>
+                <div class="feature-desc">Ambient tracks to support calm (add audio in app assets)</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">🎧</div>
+                <div class="feature-title">Playlist</div>
+                <div class="feature-desc">Quick access to your music playlist</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-emoji">💬</div>
+                <div class="feature-title">Message BF</div>
+                <div class="feature-desc">WhatsApp shortcut to loved ones</div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <h3>9</h3>
+                <p>Features</p>
+            </div>
+            <div class="stat-item">
+                <h3>∞</h3>
+                <p>Customizable</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Private</p>
+            </div>
+        </div>
+        
+        <div class="quick-start">
+            <h2>📁 File Structure</h2>
+            <p style="margin-bottom: 10px;">
+                The app is organized into modular screens, each handling a specific feature:
+            </p>
+            <code style="display: block; background: white; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px;">
+lib/
+├── main.dart
+├── screens/
+│   ├── home_screen.dart
+│   ├── breathing_screen.dart
+│   ├── mood_meter_screen.dart
+│   ├── future_planner_screen.dart
+│   ├── affirmations_screen.dart
+│   ├── journal_screen.dart
+│   ├── relaxing_sounds_screen.dart
+│   └── voice_messages_screen.dart
+├── utils/
+│   ├── external_links.dart
+│   └── theme.dart
+            </code>
+        </div>
+        
+        <div class="quick-start">
+            <h2>⚙️ Configuration</h2>
+            <p><strong>Edit these files to customize:</strong></p>
+            <ul style="margin-left: 20px; line-height: 2; color: #5A4A7B;">
+                <li><code>lib/utils/external_links.dart</code> - Phone number & playlist URL</li>
+                <li><code>lib/utils/theme.dart</code> - Colors & typography</li>
+                <li><code>lib/screens/affirmations_screen.dart</code> - Affirmation texts</li>
+                <li><code>lib/screens/home_screen.dart</code> - Welcome message & button text</li>
+                <li><code>pubspec.yaml</code> - App name, version, dependencies</li>
+            </ul>
+        </div>
+        
+        <div class="quick-start">
+            <h2>📚 Documentation</h2>
+            <ul style="margin-left: 20px; line-height: 2; color: #5A4A7B;">
+                <li><a href="README.md" style="color: #D4A5D8; text-decoration: none;">📖 Full README</a> - Complete feature documentation</li>
+                <li><a href="QUICK_START.md" style="color: #D4A5D8; text-decoration: none;">🚀 Quick Start</a> - 5-minute setup guide</li>
+                <li><a href="pubspec.yaml" style="color: #D4A5D8; text-decoration: none;">📦 Dependencies</a> - All project dependencies</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Created with ❤️ for Bhumi — mental wellness and self-care</p>
+            <p>© 2025 Wellness App | All rights reserved</p>
+        </footer>
+    </div>
+    <style>
+        /* Avatar styles */
+        .avatar { position: relative; width: 112px; height: 112px; border-radius: 50%; overflow: hidden; background: white; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,0.08); }
+        .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+        .avatar-fallback { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:40px; }
+
+        @media (max-width:700px){
+            .container{ padding:24px }
+            h1{ font-size:28px }
+        }
+    </style>
+
+    <script>
+        // Smooth scroll for in-page links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e){
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+            });
+        });
+    </script>
+</body>
+</html>
